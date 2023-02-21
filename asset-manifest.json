@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gambal/static/css/main.11171422.css",
+    "main.js": "/gambal/static/js/main.92433031.js",
+    "static/js/787.c270bc7d.chunk.js": "/gambal/static/js/787.c270bc7d.chunk.js",
+    "index.html": "/gambal/index.html",
+    "main.11171422.css.map": "/gambal/static/css/main.11171422.css.map",
+    "main.92433031.js.map": "/gambal/static/js/main.92433031.js.map",
+    "787.c270bc7d.chunk.js.map": "/gambal/static/js/787.c270bc7d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11171422.css",
+    "static/js/main.92433031.js"
+  ]
+}
