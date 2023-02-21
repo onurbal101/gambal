@@ -2,6 +2,7 @@
   "name": "iowa_gambling",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://onurbal101.github.io/gambal",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -11,8 +12,15 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "react-router-bootstrap": "^0.26.2",
+    "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.2",
     "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
@@ -20,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +49,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-bootstrap": "^0.26.0",
+    "gh-pages": "^5.0.0",
+    "html-inline-css-webpack-plugin": "^1.11.1",
+    "html-inline-script-webpack-plugin": "^3.1.0"
   }
 }

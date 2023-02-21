@@ -1,0 +1,1 @@
+export const PLAYER_CHOOSE_DECK = "PLAYER_CHOOSE_DECK"
