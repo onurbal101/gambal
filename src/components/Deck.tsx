@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 type DeckProps = {
   name: string;
   clickHandler: any;
-  disabled?: any;
+  disabled: any;
 };
 
 const Deck = ({ name, clickHandler, disabled }: DeckProps) => {
