@@ -1,0 +1,970 @@
+{
+  "A": [
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 80,
+      "loss": 150
+    },
+    {
+      "gain": 90,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 300
+    },
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 80,
+      "loss": 200
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 250
+    },
+    {
+      "gain": 90,
+      "loss": 350
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 350
+    },
+    {
+      "gain": 90,
+      "loss": 0
+    },
+    {
+      "gain": 100,
+      "loss": 250
+    },
+    {
+      "gain": 120,
+      "loss": 200
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 90,
+      "loss": 300
+    },
+    {
+      "gain": 130,
+      "loss": 150
+    },
+    {
+      "gain": 120,
+      "loss": 250
+    },
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 250
+    },
+    {
+      "gain": 140,
+      "loss": 300
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 350
+    },
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 200
+    },
+    {
+      "gain": 130,
+      "loss": 250
+    },
+    {
+      "gain": 110,
+      "loss": 150
+    },
+    {
+      "gain": 140,
+      "loss": 250
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 350
+    },
+    {
+      "gain": 120,
+      "loss": 200
+    },
+    {
+      "gain": 140,
+      "loss": 250
+    },
+    {
+      "gain": 130,
+      "loss": 250
+    },
+    {
+      "gain": 110,
+      "loss": 150
+    },
+    {
+      "gain": 150,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 150
+    },
+    {
+      "gain": 120,
+      "loss": 300
+    },
+    {
+      "gain": 150,
+      "loss": 350
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 350
+    },
+    {
+      "gain": 130,
+      "loss": 200
+    },
+    {
+      "gain": 150,
+      "loss": 250
+    },
+    {
+      "gain": 140,
+      "loss": 250
+    },
+    {
+      "gain": 120,
+      "loss": 150
+    },
+    {
+      "gain": 160,
+      "loss": 0
+    },
+    {
+      "gain": 150,
+      "loss": 150
+    },
+    {
+      "gain": 130,
+      "loss": 300
+    },
+    {
+      "gain": 160,
+      "loss": 350
+    },
+    {
+      "gain": 120,
+      "loss": 250
+    },
+    {
+      "gain": 150,
+      "loss": 350
+    },
+    {
+      "gain": 140,
+      "loss": 200
+    },
+    {
+      "gain": 160,
+      "loss": 250
+    },
+    {
+      "gain": 150,
+      "loss": 250
+    },
+    {
+      "gain": 130,
+      "loss": 150
+    },
+    {
+      "gain": 170,
+      "loss": 250
+    },
+    {
+      "gain": 160,
+      "loss": 150
+    },
+    {
+      "gain": 140,
+      "loss": 300
+    },
+    {
+      "gain": 170,
+      "loss": 350
+    },
+    {
+      "gain": 130,
+      "loss": 250
+    }
+  ],
+  "B": [
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 80,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 90,
+      "loss": 0
+    },
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 90,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 1250
+    },
+    {
+      "gain": 80,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 90,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 1500
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 90,
+      "loss": 0
+    },
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 1750
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 0
+    },
+    {
+      "gain": 100,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 2000
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 0
+    },
+    {
+      "gain": 150,
+      "loss": 0
+    },
+    {
+      "gain": 110,
+      "loss": 0
+    },
+    {
+      "gain": 150,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 0
+    },
+    {
+      "gain": 150,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 0
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 0
+    },
+    {
+      "gain": 160,
+      "loss": 2250
+    },
+    {
+      "gain": 120,
+      "loss": 0
+    },
+    {
+      "gain": 160,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 0
+    },
+    {
+      "gain": 150,
+      "loss": 0
+    },
+    {
+      "gain": 150,
+      "loss": 0
+    },
+    {
+      "gain": 160,
+      "loss": 0
+    },
+    {
+      "gain": 140,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 0
+    },
+    {
+      "gain": 150,
+      "loss": 0
+    },
+    {
+      "gain": 170,
+      "loss": 0
+    },
+    {
+      "gain": 130,
+      "loss": 0
+    },
+    {
+      "gain": 170,
+      "loss": 2500
+    },
+    {
+      "gain": 140,
+      "loss": 0
+    },
+    {
+      "gain": 160,
+      "loss": 0
+    }
+  ],
+  "C": [
+    {
+      "gain": 50,
+      "loss": 0
+    },
+    {
+      "gain": 60,
+      "loss": 0
+    },
+    {
+      "gain": 40,
+      "loss": 50
+    },
+    {
+      "gain": 55,
+      "loss": 0
+    },
+    {
+      "gain": 55,
+      "loss": 50
+    },
+    {
+      "gain": 45,
+      "loss": 0
+    },
+    {
+      "gain": 50,
+      "loss": 50
+    },
+    {
+      "gain": 45,
+      "loss": 0
+    },
+    {
+      "gain": 60,
+      "loss": 50
+    },
+    {
+      "gain": 40,
+      "loss": 50
+    },
+    {
+      "gain": 55,
+      "loss": 0
+    },
+    {
+      "gain": 55,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 75
+    },
+    {
+      "gain": 45,
+      "loss": 0
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 40,
+      "loss": 0
+    },
+    {
+      "gain": 50,
+      "loss": 25
+    },
+    {
+      "gain": 60,
+      "loss": 75
+    },
+    {
+      "gain": 70,
+      "loss": 0
+    },
+    {
+      "gain": 40,
+      "loss": 50
+    },
+    {
+      "gain": 60,
+      "loss": 0
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 55,
+      "loss": 0
+    },
+    {
+      "gain": 80,
+      "loss": 50
+    },
+    {
+      "gain": 40,
+      "loss": 25
+    },
+    {
+      "gain": 60,
+      "loss": 50
+    },
+    {
+      "gain": 55,
+      "loss": 0
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 40,
+      "loss": 75
+    },
+    {
+      "gain": 80,
+      "loss": 50
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 75,
+      "loss": 0
+    },
+    {
+      "gain": 55,
+      "loss": 25
+    },
+    {
+      "gain": 60,
+      "loss": 25
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 0
+    },
+    {
+      "gain": 55,
+      "loss": 75
+    },
+    {
+      "gain": 75,
+      "loss": 25
+    },
+    {
+      "gain": 45,
+      "loss": 50
+    },
+    {
+      "gain": 85,
+      "loss": 75
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 80,
+      "loss": 0
+    },
+    {
+      "gain": 60,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 75,
+      "loss": 25
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 60,
+      "loss": 75
+    },
+    {
+      "gain": 80,
+      "loss": 25
+    },
+    {
+      "gain": 50,
+      "loss": 50
+    },
+    {
+      "gain": 90,
+      "loss": 75
+    },
+    {
+      "gain": 75,
+      "loss": 25
+    },
+    {
+      "gain": 85,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 80,
+      "loss": 25
+    },
+    {
+      "gain": 75,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 75
+    },
+    {
+      "gain": 85,
+      "loss": 25
+    },
+    {
+      "gain": 55,
+      "loss": 50
+    },
+    {
+      "gain": 95,
+      "loss": 75
+    }
+  ],
+  "D": [
+    {
+      "gain": 50,
+      "loss": 0
+    },
+    {
+      "gain": 60,
+      "loss": 0
+    },
+    {
+      "gain": 40,
+      "loss": 50
+    },
+    {
+      "gain": 55,
+      "loss": 0
+    },
+    {
+      "gain": 55,
+      "loss": 50
+    },
+    {
+      "gain": 45,
+      "loss": 0
+    },
+    {
+      "gain": 50,
+      "loss": 50
+    },
+    {
+      "gain": 45,
+      "loss": 0
+    },
+    {
+      "gain": 60,
+      "loss": 50
+    },
+    {
+      "gain": 40,
+      "loss": 50
+    },
+    {
+      "gain": 55,
+      "loss": 0
+    },
+    {
+      "gain": 55,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 75
+    },
+    {
+      "gain": 45,
+      "loss": 0
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 40,
+      "loss": 0
+    },
+    {
+      "gain": 50,
+      "loss": 25
+    },
+    {
+      "gain": 60,
+      "loss": 75
+    },
+    {
+      "gain": 70,
+      "loss": 0
+    },
+    {
+      "gain": 40,
+      "loss": 50
+    },
+    {
+      "gain": 60,
+      "loss": 0
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 55,
+      "loss": 0
+    },
+    {
+      "gain": 80,
+      "loss": 50
+    },
+    {
+      "gain": 40,
+      "loss": 25
+    },
+    {
+      "gain": 60,
+      "loss": 50
+    },
+    {
+      "gain": 55,
+      "loss": 0
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 40,
+      "loss": 75
+    },
+    {
+      "gain": 80,
+      "loss": 50
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 75,
+      "loss": 0
+    },
+    {
+      "gain": 55,
+      "loss": 25
+    },
+    {
+      "gain": 60,
+      "loss": 25
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 0
+    },
+    {
+      "gain": 55,
+      "loss": 75
+    },
+    {
+      "gain": 75,
+      "loss": 25
+    },
+    {
+      "gain": 45,
+      "loss": 50
+    },
+    {
+      "gain": 85,
+      "loss": 75
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 80,
+      "loss": 0
+    },
+    {
+      "gain": 60,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 75,
+      "loss": 25
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 60,
+      "loss": 75
+    },
+    {
+      "gain": 80,
+      "loss": 25
+    },
+    {
+      "gain": 50,
+      "loss": 50
+    },
+    {
+      "gain": 90,
+      "loss": 75
+    },
+    {
+      "gain": 75,
+      "loss": 25
+    },
+    {
+      "gain": 85,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 25
+    },
+    {
+      "gain": 70,
+      "loss": 25
+    },
+    {
+      "gain": 80,
+      "loss": 25
+    },
+    {
+      "gain": 75,
+      "loss": 25
+    },
+    {
+      "gain": 65,
+      "loss": 75
+    },
+    {
+      "gain": 85,
+      "loss": 25
+    },
+    {
+      "gain": 55,
+      "loss": 50
+    },
+    {
+      "gain": 95,
+      "loss": 75
+    }
+  ]
+}
