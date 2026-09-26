@@ -63,7 +63,7 @@ jobs:
           rsync -rlptz --delete --safe-links --chmod=D755,F644
           -e "ssh -i $HOME/.ssh/gambal_deploy_key -p $GAMBAL_VPS_PORT -o BatchMode=yes -o StrictHostKeyChecking=yes"
           dist/
-          "$GAMBAL_VPS_USER@$GAMBAL_VPS_HOST:/home/deploy/services/apps/gambal/releases/${GITHUB_SHA}-${GITHUB_RUN_ID}/"
+          "$GAMBAL_VPS_USER@$GAMBAL_VPS_HOST:${GITHUB_SHA}-${GITHUB_RUN_ID}/"
 
       - name: Activate release
         run: >-
