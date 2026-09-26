@@ -1,0 +1,75 @@
+name: Deploy Gambal to VPS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gambal-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Build and deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GAMBAL_VPS_HOST: ${{ vars.GAMBAL_VPS_HOST }}
+      GAMBAL_VPS_PORT: ${{ vars.GAMBAL_VPS_PORT }}
+      GAMBAL_VPS_USER: ${{ vars.GAMBAL_VPS_USER }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build the PWA
+        run: npm run build
+
+      - name: Configure SSH
+        env:
+          GAMBAL_VPS_SSH_KEY: ${{ secrets.GAMBAL_VPS_SSH_KEY }}
+          GAMBAL_VPS_KNOWN_HOSTS: ${{ secrets.GAMBAL_VPS_KNOWN_HOSTS }}
+        run: |
+          set -eu
+          install -m 700 -d "$HOME/.ssh"
+          printf '%s\n' "$GAMBAL_VPS_SSH_KEY" > "$HOME/.ssh/gambal_deploy_key"
+          printf '%s\n' "$GAMBAL_VPS_KNOWN_HOSTS" > "$HOME/.ssh/known_hosts"
+          chmod 600 "$HOME/.ssh/gambal_deploy_key" "$HOME/.ssh/known_hosts"
+
+      - name: Create release directory
+        run: >-
+          ssh -i "$HOME/.ssh/gambal_deploy_key"
+          -p "$GAMBAL_VPS_PORT"
+          -o BatchMode=yes
+          -o StrictHostKeyChecking=yes
+          "$GAMBAL_VPS_USER@$GAMBAL_VPS_HOST"
+          "prepare ${GITHUB_SHA} ${GITHUB_RUN_ID}"
+
+      - name: Upload built files
+        run: >-
+          rsync -rlptz --delete --safe-links --chmod=D755,F644
+          -e "ssh -i $HOME/.ssh/gambal_deploy_key -p $GAMBAL_VPS_PORT -o BatchMode=yes -o StrictHostKeyChecking=yes"
+          dist/
+          "$GAMBAL_VPS_USER@$GAMBAL_VPS_HOST:/home/deploy/services/apps/gambal/releases/${GITHUB_SHA}-${GITHUB_RUN_ID}/"
+
+      - name: Activate release
+        run: >-
+          ssh -i "$HOME/.ssh/gambal_deploy_key"
+          -p "$GAMBAL_VPS_PORT"
+          -o BatchMode=yes
+          -o StrictHostKeyChecking=yes
+          "$GAMBAL_VPS_USER@$GAMBAL_VPS_HOST"
+          "activate ${GITHUB_SHA} ${GITHUB_RUN_ID}"

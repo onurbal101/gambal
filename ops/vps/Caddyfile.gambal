@@ -1,0 +1,6 @@
+gambal.onurbal.com {
+	root * /srv/gambal/current
+	encode zstd gzip
+	try_files {path} /index.html
+	file_server
+}

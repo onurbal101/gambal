@@ -2,6 +2,11 @@ import { create } from "zustand";
 import { createSession, TaskError } from "../domain/engine";
 import { getTasks } from "../domain/tasks";
 import { repository } from "../storage/repository";
+import {
+  playOutcome,
+  primeOutcomeAudio,
+  stopOutcomeAudio,
+} from "../audio/outcome";
 import type {
   ChoiceCommand,
   DeckId,
@@ -28,6 +33,7 @@ interface State {
   record: SessionRecord | null;
   language: Language;
   theme: Theme;
+  soundMuted: boolean;
   taskId: string;
   mode: "self" | "research";
   participant: Participant;
@@ -39,6 +45,7 @@ interface State {
   interrupted: boolean;
   init: () => Promise<void>;
   preference: (language: Language, theme: Theme) => void;
+  toggleSound: () => void;
   navigate: (screen: Screen) => Promise<void>;
   configure: (
     update: Partial<Pick<State, "taskId" | "mode" | "participant">>,
@@ -58,15 +65,20 @@ let readyAt = performance.now(),
   feedbackTimer: ReturnType<typeof setTimeout> | undefined;
 const code = () => `G-${crypto.randomUUID().slice(0, 8).toUpperCase()}`;
 const errorCode = (e: unknown) => (e instanceof TaskError ? e.code : "storage");
-function prefs(): { language: Language; theme: Theme } {
+function prefs(): {
+  language: Language;
+  theme: Theme;
+  soundMuted: boolean;
+} {
   try {
     const p = JSON.parse(localStorage.getItem("gambal-preferences") || "{}");
     return {
       language: p.language === "en" ? "en" : "tr",
       theme: p.theme === "dark" ? "dark" : "light",
+      soundMuted: p.soundMuted === true,
     };
   } catch {
-    return { language: "tr", theme: "light" };
+    return { language: "tr", theme: "light", soundMuted: false };
   }
 }
 export const useApp = create<State>((set, get) => ({
@@ -97,11 +109,26 @@ export const useApp = create<State>((set, get) => ({
     try {
       localStorage.setItem(
         "gambal-preferences",
-        JSON.stringify({ language, theme }),
+        JSON.stringify({ language, theme, soundMuted: get().soundMuted }),
       );
     } catch {
       /* Session persistence does not depend on preferences. */
     }
+  },
+  toggleSound: () => {
+    const soundMuted = !get().soundMuted;
+    set({ soundMuted });
+    try {
+      const { language, theme } = get();
+      localStorage.setItem(
+        "gambal-preferences",
+        JSON.stringify({ language, theme, soundMuted }),
+      );
+    } catch {
+      /* Sound control remains available if preference storage is unavailable. */
+    }
+    if (soundMuted) stopOutcomeAudio();
+    else primeOutcomeAudio();
   },
   configure: (update) => set(update),
   refresh: async () => {
@@ -205,6 +232,7 @@ export const useApp = create<State>((set, get) => ({
       s.record.session.status !== "active"
     )
       return;
+    if (!s.soundMuted) primeOutcomeAudio();
     const command: ChoiceCommand = {
       id: crypto.randomUUID(),
       deck,
@@ -237,7 +265,10 @@ export const useApp = create<State>((set, get) => ({
         s.pending,
       );
       const current = get().record!;
-      const trials = current.trials.some((t) => t.id === result.trial.id)
+      const alreadyRecorded = current.trials.some(
+        (t) => t.id === result.trial.id,
+      );
+      const trials = alreadyRecorded
         ? current.trials
         : [...current.trials, result.trial];
       set({
@@ -246,6 +277,8 @@ export const useApp = create<State>((set, get) => ({
         feedback: true,
         interrupted: false,
       });
+      if (!alreadyRecorded && !get().soundMuted)
+        playOutcome(result.trial.gain - result.trial.loss);
       clearTimeout(feedbackTimer);
       feedbackTimer = setTimeout(() => {
         readyAt = performance.now();

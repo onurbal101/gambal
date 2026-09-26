@@ -20,6 +20,8 @@ npm run preview
 
 Open the address shown by Vite. A successful first online load caches the app, fonts, icons, translations, and task definitions. Use localhost or HTTPS. Development mode does not test the service worker.
 
+On supported browsers, install gambal from the browser menu. On iPhone or iPad, use Share > Add to Home Screen. In Safari on Mac, use Share > Add to Dock. Offline use starts after the first online load.
+
 ```sh
 npm test
 npm run typecheck

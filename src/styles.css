@@ -114,12 +114,45 @@
   font-variant-numeric: tabular-nums;
   margin: 5px 0 17px;
 }
-#gb .balance span {
+#gb .balance-currency {
   font-size: 34px;
   vertical-align: top;
   line-height: 1.7;
   letter-spacing: -2px;
   margin-right: 5px;
+}
+#gb .balance-visual {
+  display: inline-block;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+#gb .balance-reel {
+  display: inline-block;
+  height: 1.1em;
+  overflow: hidden;
+  vertical-align: top;
+  letter-spacing: 0;
+}
+#gb .balance-reel-track {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+#gb .balance-reel-item {
+  display: flex;
+  flex: 0 0 1.1em;
+  align-items: center;
+  justify-content: center;
+  min-width: 0.58em;
+  height: 1.1em;
+}
+#gb .balance-reel-track--up.is-rolling {
+  animation: balance-reel-roll var(--roll-duration)
+    cubic-bezier(0.12, 0.86, 0.24, 1) var(--roll-delay) both;
+}
+#gb .balance-reel-track--down.is-rolling {
+  animation: balance-reel-roll var(--roll-duration)
+    cubic-bezier(0.32, 0.7, 0.38, 1) var(--roll-delay) both;
 }
 #gb .outcome {
   display: flex;
@@ -212,6 +245,29 @@
   gap: 7px;
   color: var(--muted-ink);
   font-size: 12px;
+}
+#gb .sound-toggle {
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  color: var(--muted-ink);
+  transition:
+    color 0.16s,
+    background-color 0.16s;
+}
+#gb .sound-toggle:hover:not(:disabled) {
+  color: var(--ink);
+  background: var(--soft);
+}
+#gb .sound-toggle[aria-pressed="true"] {
+  color: var(--ink);
+}
+#gb .sound-toggle svg {
+  display: block;
 }
 #gb .text-button {
   padding: 10px 7px;
@@ -1141,6 +1197,25 @@ button:disabled {
     opacity: 1;
   }
 }
+@keyframes balance-reel-roll {
+  0% {
+    transform: translateY(var(--roll-start));
+    color: var(--roll-accent);
+  }
+  74% {
+    transform: translateY(var(--roll-near));
+  }
+  86% {
+    transform: translateY(var(--roll-overshoot));
+  }
+  94% {
+    transform: translateY(var(--roll-rebound));
+  }
+  100% {
+    transform: translateY(var(--roll-end));
+    color: var(--ink);
+  }
+}
 @keyframes tile-flip {
   0% {
     transform: perspective(700px) rotateY(0) translateY(3px);
@@ -1288,7 +1363,7 @@ button:disabled {
     font-size: 42px;
     letter-spacing: -2px;
   }
-  #gb.playing .balance span {
+  #gb.playing .balance-currency {
     font-size: 23px;
   }
   #gb.playing .prominent {

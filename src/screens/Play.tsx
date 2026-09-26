@@ -3,6 +3,36 @@ import { DECKS } from "../domain/types";
 import { useApp } from "../state/store";
 import { number, text } from "../i18n";
 import { Modal } from "../components/Modal";
+import { BalanceOdometer } from "../components/BalanceOdometer";
+
+function SoundIcon({ muted }: { muted: boolean }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M3.5 9.5v5h3.25L11.5 18V6L6.75 9.5H3.5Z" />
+      {muted ? (
+        <path d="M14.5 17.5 21 6.5" />
+      ) : (
+        <>
+          <path d="M14 10a3 3 0 0 1 0 4" />
+          <path d="M16.5 7.5a6.5 6.5 0 0 1 0 9" />
+          <path d="M19 5a10 10 0 0 1 0 14" />
+        </>
+      )}
+    </svg>
+  );
+}
+
 export function Play() {
   const s = useApp(),
     r = s.record!,
@@ -24,10 +54,10 @@ export function Play() {
     <section className="play">
       <h1 className="sr">gambal</h1>
       <p className="balance-label">{t.balance}</p>
-      <div className="balance">
-        <span>$</span>
-        {number(session.balance, session.language)}
-      </div>
+      <BalanceOdometer
+        value={session.balance}
+        language={session.language}
+      />
       <div
         className={`outcome prominent ${s.feedback ? "revealing" : ""}`}
         key={last?.id ?? "initial"}
@@ -93,6 +123,16 @@ export function Play() {
           }}
         >
           {t.end}
+        </button>
+        <button
+          type="button"
+          className="sound-toggle"
+          aria-label={t.soundEffects}
+          aria-pressed={!s.soundMuted}
+          title={s.soundMuted ? t.enableSound : t.muteSound}
+          onClick={s.toggleSound}
+        >
+          <SoundIcon muted={s.soundMuted} />
         </button>
       </div>
       {dialog && (
