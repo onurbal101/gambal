@@ -106,8 +106,9 @@ const tr = {
   muteSound: "Ses efektlerini kapat",
   checksum: "Deste SHA-256",
   verification: "Doğrulama",
-  legacyNote: "Eski deste verileri aynen korunur. C ve D desteleri aynıdır.",
-  legacy: "Eski veriler korundu",
+  legacyNote:
+    "Eski deste verileri kullanılır; D destesindeki altı kayıp değeri değiştirilmiştir.",
+  legacy: "Eski deste verisi",
   verified: "Doğrulandı",
   downloadCsv: "Seçimler · CSV",
   downloadJson: "Oturum · JSON",
@@ -220,8 +221,8 @@ const en: Record<keyof typeof tr, string> = {
   checksum: "Deck SHA-256",
   verification: "Verification",
   legacyNote:
-    "The old deck data is preserved exactly. Decks C and D are identical.",
-  legacy: "Legacy data preserved",
+    "The fixture uses the old deck data, with six changed loss values in Deck D.",
+  legacy: "Legacy data",
   verified: "Verified",
   downloadCsv: "Choices · CSV",
   downloadJson: "Session · JSON",

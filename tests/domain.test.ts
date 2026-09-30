@@ -21,8 +21,16 @@ function choose(s: Session, deck: "A" | "B" | "C" | "D", now = Date.now()) {
   );
 }
 describe("legacy and protocol gates", () => {
-  it("preserves every CSV row and C/D duplication", async () => {
+  it("preserves CSV rows with the six requested Deck D loss values", async () => {
     const task = (await getTasks())[0];
+    const deckDPenalties: Record<number, number> = {
+      9: 250,
+      19: 275,
+      28: 300,
+      34: 325,
+      44: 350,
+      57: 375,
+    };
     for (const d of DECKS) {
       const rows = readFileSync(
         `gambal/src/new_iowa/src/decks/deck_${d.toLowerCase()}.csv`,
@@ -35,10 +43,17 @@ describe("legacy and protocol gates", () => {
           const [gain, loss] = line.split(",").map(Number);
           return { gain, loss };
         });
-      expect(task.decks[d]).toEqual(rows);
+      const expected = rows.map((row, index) =>
+        d === "D" && deckDPenalties[index] !== undefined
+          ? { ...row, loss: deckDPenalties[index] }
+          : row,
+      );
+      expect(task.decks[d]).toEqual(expected);
       expect(rows).toHaveLength(60);
     }
-    expect(task.decks.C).toEqual(task.decks.D);
+    expect(task.decks.C.map((card) => card.gain)).toEqual(
+      task.decks.D.map((card) => card.gain),
+    );
     expect(task.deckChecksum).toBe(await checksum(task.decks));
   });
   it("keeps unverified versions unavailable", async () => {
