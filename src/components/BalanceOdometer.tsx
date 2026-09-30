@@ -59,8 +59,9 @@ export function BalanceOdometer({
   const digitPositions = formattedCharacters
     .map((character, index) => (isDigit(character) ? index : -1))
     .filter((index) => index >= 0);
-  const hasDigitMovement = digitPositions.some((index, rank) => {
+  const hasDigitMovement = digitPositions.some((index, indexFromLeft) => {
     if (!activeRoll) return false;
+    const rank = digitPositions.length - indexFromLeft - 1;
     const oldCharacter = previousDigits[rank];
     const direction = activeRoll.direction;
     const oldDigit =
@@ -78,7 +79,8 @@ export function BalanceOdometer({
       return <span key={`${activeRoll?.id ?? 0}-${index}`}>{character}</span>;
     }
 
-    const rank = digitRank++;
+    const indexFromLeft = digitRank++;
+    const rank = digitPositions.length - indexFromLeft - 1;
     const nextDigit = Number(character);
     const oldCharacter = previousDigits[rank];
     const direction = activeRoll?.direction ?? "up";
