@@ -1202,14 +1202,9 @@ button:disabled {
     transform: translateY(var(--roll-start));
     color: var(--roll-accent);
   }
-  74% {
-    transform: translateY(var(--roll-near));
-  }
-  86% {
+  78% {
     transform: translateY(var(--roll-overshoot));
-  }
-  94% {
-    transform: translateY(var(--roll-rebound));
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
   }
   100% {
     transform: translateY(var(--roll-end));

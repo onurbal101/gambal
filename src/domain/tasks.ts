@@ -3,8 +3,8 @@ import type { DeckSchedule, TaskDefinition } from "./types";
 const source =
   "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00220/full";
 const instructions = {
-  tr: "2.000 $ ile başlarsınız. Her seçimde dört desteden bir kart alın. Kartlar para kazandırır; bazı kartlar aynı zamanda para kaybettirir. Amacınız bakiyenizi artırmaktır. Bitiş ekranını görene kadar devam edin.",
-  en: "You start with $2,000. Select a card from one of the four decks each time. Cards give you money; some cards also take money away. Your aim is to increase your balance. Keep playing until the end screen appears.",
+  tr: "$2000 ile başlarsınız. Her seçimde dört desteden bir kart alın. Kartlar para kazandırır; bazı kartlar aynı zamanda para kaybettirir. Amacınız bakiyenizi artırmaktır. Bitiş ekranını görene kadar devam edin.",
+  en: "You start with $2000. Select a card from one of the four decks each time. Cards give you money; some cards also take money away. Your aim is to increase your balance. Keep playing until the end screen appears.",
 };
 export async function checksum(decks: DeckSchedule): Promise<string> {
   const bytes = new TextEncoder().encode(

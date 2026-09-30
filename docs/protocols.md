@@ -4,7 +4,7 @@
 
 This is a preserved Gambal schedule with a new presentation. It is not a claim of equivalence to a published or licensed clinical IGT.
 
-The fixture is based on `gambal/src/new_iowa/src/decks/deck_{a,b,c,d}.csv`. Each deck has 60 cards. The source files have identical C and D decks. The app fixture keeps the source card order and gain values, but sets the losses for Deck D cards 10, 20, 29, 35, 45, and 58 to 250, 275, 300, 325, 350, and 375. The original CSV files stay unchanged. The fixture check compares every source value except these six Deck D loss overrides.
+The fixture is based on `gambal/src/new_iowa/src/decks/deck_{a,b,c,d}.csv`. Each deck has 60 cards. The source files have identical C and D decks. The app fixture keeps the source card order and gain values. Only Deck D cards 10, 20, 29, 35, 45, and 58 have losses: 250, 275, 300, 325, 350, and 375. All other Deck D losses are 0. The original CSV files stay unchanged. The fixture check compares Decks A-C with their source rows, then checks all Deck D gains, card order, and loss values.
 
 The procedure starts at 2,000, stops at 100 choices, and makes an exhausted deck unavailable. Negative balances do not end play. Each session has an immutable task snapshot, source paths, stable version ID, and a SHA-256 deck checksum. The checksum input is the JSON serialization of the ordered A/B/C/D arrays of `[gain, loss]` pairs.
 

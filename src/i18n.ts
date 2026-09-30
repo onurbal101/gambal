@@ -107,7 +107,7 @@ const tr = {
   checksum: "Deste SHA-256",
   verification: "Doğrulama",
   legacyNote:
-    "Eski deste verileri kullanılır; D destesindeki altı kayıp değeri değiştirilmiştir.",
+    "D destesindeki yalnızca 10, 20, 29, 35, 45 ve 58 numaralı kartlarda kayıp vardır.",
   legacy: "Eski deste verisi",
   verified: "Doğrulandı",
   downloadCsv: "Seçimler · CSV",
@@ -221,7 +221,7 @@ const en: Record<keyof typeof tr, string> = {
   checksum: "Deck SHA-256",
   verification: "Verification",
   legacyNote:
-    "The fixture uses the old deck data, with six changed loss values in Deck D.",
+    "Only Deck D cards 10, 20, 29, 35, 45, and 58 have losses.",
   legacy: "Legacy data",
   verified: "Verified",
   downloadCsv: "Choices · CSV",

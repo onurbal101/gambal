@@ -104,12 +104,9 @@ export function BalanceOdometer({
     const start = -startRow * 1.1;
     const end = -endRow * 1.1;
     const overshoot = end + (direction === "up" ? -0.14 : 0.21);
-    const rebound = end + (direction === "up" ? 0.06 : -0.06);
     const style = {
       "--roll-start": `${start}em`,
-      "--roll-near": `${start + (end - start) * 0.94}em`,
       "--roll-overshoot": `${overshoot}em`,
-      "--roll-rebound": `${rebound}em`,
       "--roll-end": `${end}em`,
       "--roll-duration": `${activeRoll.duration}ms`,
       "--roll-delay": `${Math.min(rank, 3) * 22}ms`,

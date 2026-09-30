@@ -21,7 +21,7 @@ function choose(s: Session, deck: "A" | "B" | "C" | "D", now = Date.now()) {
   );
 }
 describe("legacy and protocol gates", () => {
-  it("preserves CSV rows with the six requested Deck D loss values", async () => {
+  it("keeps only the six requested Deck D penalties", async () => {
     const task = (await getTasks())[0];
     const deckDPenalties: Record<number, number> = {
       9: 250,
@@ -44,9 +44,7 @@ describe("legacy and protocol gates", () => {
           return { gain, loss };
         });
       const expected = rows.map((row, index) =>
-        d === "D" && deckDPenalties[index] !== undefined
-          ? { ...row, loss: deckDPenalties[index] }
-          : row,
+        d === "D" ? { ...row, loss: deckDPenalties[index] ?? 0 } : row,
       );
       expect(task.decks[d]).toEqual(expected);
       expect(rows).toHaveLength(60);

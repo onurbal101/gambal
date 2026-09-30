@@ -736,7 +736,7 @@
     },
     {
       "gain": 40,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 55,
@@ -744,7 +744,7 @@
     },
     {
       "gain": 55,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 45,
@@ -752,7 +752,7 @@
     },
     {
       "gain": 50,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 45,
@@ -760,7 +760,7 @@
     },
     {
       "gain": 60,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 40,
@@ -772,11 +772,11 @@
     },
     {
       "gain": 55,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 65,
-      "loss": 75
+      "loss": 0
     },
     {
       "gain": 45,
@@ -784,7 +784,7 @@
     },
     {
       "gain": 70,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 40,
@@ -792,11 +792,11 @@
     },
     {
       "gain": 50,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 60,
-      "loss": 75
+      "loss": 0
     },
     {
       "gain": 70,
@@ -812,7 +812,7 @@
     },
     {
       "gain": 65,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 55,
@@ -820,15 +820,15 @@
     },
     {
       "gain": 80,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 40,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 60,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 55,
@@ -836,7 +836,7 @@
     },
     {
       "gain": 65,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 40,
@@ -844,11 +844,11 @@
     },
     {
       "gain": 80,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 65,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 75,
@@ -856,11 +856,11 @@
     },
     {
       "gain": 55,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 60,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 70,
@@ -872,23 +872,23 @@
     },
     {
       "gain": 55,
-      "loss": 75
+      "loss": 0
     },
     {
       "gain": 75,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 45,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 85,
-      "loss": 75
+      "loss": 0
     },
     {
       "gain": 70,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 80,
@@ -896,11 +896,11 @@
     },
     {
       "gain": 60,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 65,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 75,
@@ -908,51 +908,51 @@
     },
     {
       "gain": 70,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 60,
-      "loss": 75
+      "loss": 0
     },
     {
       "gain": 80,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 50,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 90,
-      "loss": 75
+      "loss": 0
     },
     {
       "gain": 75,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 85,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 65,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 70,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 80,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 75,
-      "loss": 25
+      "loss": 0
     },
     {
       "gain": 65,
-      "loss": 75
+      "loss": 0
     },
     {
       "gain": 85,
@@ -960,11 +960,11 @@
     },
     {
       "gain": 55,
-      "loss": 50
+      "loss": 0
     },
     {
       "gain": 95,
-      "loss": 75
+      "loss": 0
     }
   ]
 }
