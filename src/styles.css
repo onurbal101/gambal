@@ -96,6 +96,12 @@
   padding: 43px 40px 32px;
   min-height: 629px;
 }
+#gb .startup {
+  min-height: 540px;
+  display: grid;
+  place-items: center;
+  color: var(--muted-ink);
+}
 #gb .play {
   max-width: 840px;
   margin: auto;

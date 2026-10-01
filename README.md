@@ -18,7 +18,7 @@ npm run build
 npm run preview
 ```
 
-Open the address shown by Vite. A successful first online load caches the app, fonts, icons, translations, and task definitions. Use localhost or HTTPS. Development mode does not test the service worker.
+Open the address shown by Vite. A successful first online load caches the app, fonts, icons, manifest, translations, and task definitions. After that, play, reports, and CSV/JSON downloads work offline. Use localhost or HTTPS. Development mode does not test the service worker.
 
 On supported browsers, install gambal from the browser menu. On iPhone or iPad, use Share > Add to Home Screen. In Safari on Mac, use Share > Add to Dock. Offline use starts after the first online load.
 
@@ -33,7 +33,7 @@ Select the language, theme, task version, and session mode before play. Optional
 
 Only **gambal Legacy** is enabled. Original IGT, Clinical IGT, and Three-stage IGT remain unavailable until their full definitions are verified. See [protocol evidence](docs/protocols.md).
 
-Each choice is saved before its outcome is shown. A failed write blocks play. Retry keeps the same choice ID. An expiring database lease permits only one writer for a session. After an abrupt tab close, recovery can require up to 15 seconds for the old lease to expire. An interrupted response has a null response time, with the interruption stored separately.
+Each choice is saved before its outcome is shown. A failed write blocks play. Retry keeps the same choice ID. An expiring database lease permits only one writer for a session. Gambal reopens the last session after a reload or app restart and pauses it before play resumes. If a closed tab leaves its lease behind, Gambal retries when the lease expires. The browser is also asked to preserve Gambal's site data. An interrupted response has a null response time, with the interruption stored separately.
 
 Browser storage is specific to the origin, browser, and profile. Export JSON backups to retain data outside that storage. Import validates and replays each record, skips exact duplicates, and rejects conflicts without replacing existing sessions. Deletion requires confirmation.
 

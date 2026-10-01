@@ -226,11 +226,23 @@ export function StageBreak() {
       )}
       <button
         className="primary"
-        disabled={remaining > 0 || s.busy || !!s.error}
+        disabled={remaining > 0 || s.busy || s.paused || !!s.error}
         onClick={() => void s.nextStage()}
       >
         {t.next}
       </button>
+      {s.paused && !s.error && (
+        <Modal title={t.paused} closeLabel={t.close}>
+          <p>{t.saved}</p>
+          <button
+            className="primary"
+            disabled={s.busy}
+            onClick={() => void s.resume()}
+          >
+            {t.resume}
+          </button>
+        </Modal>
+      )}
     </section>
   );
 }

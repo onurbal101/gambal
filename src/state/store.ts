@@ -26,7 +26,45 @@ export type Screen =
   | "report"
   | "library"
   | "break";
+const CURRENT_SESSION_KEY = "gambal-current-session";
+const RECOVERY_RETRY_MS = 16_000;
+
+function currentSessionId(): string | null {
+  try {
+    return localStorage.getItem(CURRENT_SESSION_KEY);
+  } catch {
+    return null;
+  }
+}
+
+function rememberSession(id: string | null) {
+  try {
+    if (id) localStorage.setItem(CURRENT_SESSION_KEY, id);
+    else localStorage.removeItem(CURRENT_SESSION_KEY);
+  } catch {
+    /* IndexedDB remains the source of truth for session data. */
+  }
+}
+
+let recoveryTimer: ReturnType<typeof setTimeout> | undefined;
+let recoverySessionId: string | null = null;
+function clearRecoveryTimer() {
+  clearTimeout(recoveryTimer);
+  recoveryTimer = undefined;
+  recoverySessionId = null;
+}
+
+function requestPersistentStorage() {
+  try {
+    const request = navigator.storage?.persist?.();
+    if (request) void request.catch(() => {});
+  } catch {
+    /* Storage persistence is a browser hint, not a start requirement. */
+  }
+}
+
 interface State {
+  initialized: boolean;
   screen: Screen;
   tasks: TaskDefinition[];
   sessions: Session[];
@@ -82,6 +120,7 @@ function prefs(): {
   }
 }
 export const useApp = create<State>((set, get) => ({
+  initialized: false,
   screen: "home",
   tasks: [],
   sessions: [],
@@ -100,8 +139,26 @@ export const useApp = create<State>((set, get) => ({
     try {
       set({ tasks: await getTasks() });
       await get().refresh();
+      const sessions = get().sessions;
+      const rememberedId = currentSessionId();
+      let session = rememberedId
+        ? sessions.find((item) => item.id === rememberedId)
+        : undefined;
+      if (rememberedId && !session) rememberSession(null);
+      session ??= sessions.find(
+        (item) => item.status === "active" || item.status === "break",
+      );
+      if (session) {
+        rememberSession(session.id);
+        await get().open(
+          session.id,
+          session.status === "active" || session.status === "break",
+        );
+      }
     } catch (e) {
       set({ error: errorCode(e) });
+    } finally {
+      set({ initialized: true });
     }
   },
   preference: (language, theme) => {
@@ -140,6 +197,10 @@ export const useApp = create<State>((set, get) => ({
     if (s.record && (s.screen === "play" || s.screen === "break")) return;
     if (s.record)
       await repository.release(s.record.session.id, owner).catch(() => {});
+    clearRecoveryTimer();
+    rememberSession(
+      screen === "report" && s.record ? s.record.session.id : null,
+    );
     set({
       screen,
       error: null,
@@ -152,6 +213,8 @@ export const useApp = create<State>((set, get) => ({
   },
   start: async () => {
     if (get().busy) return;
+    requestPersistentStorage();
+    clearRecoveryTimer();
     set({ busy: true, error: null });
     try {
       const s = get(),
@@ -167,6 +230,7 @@ export const useApp = create<State>((set, get) => ({
       await repository.create(session);
       if (!(await repository.claim(session.id, owner)))
         throw new TaskError("locked");
+      rememberSession(session.id);
       readyAt = performance.now();
       set({
         record: { session, trials: [], interruptions: [] },
@@ -187,12 +251,14 @@ export const useApp = create<State>((set, get) => ({
     set({ busy: true, error: null });
     try {
       const record = await repository.get(id);
+      rememberSession(id);
       if (
         resume &&
         (record.session.status === "active" ||
           record.session.status === "break")
       ) {
         if (!(await repository.claim(id, owner))) throw new TaskError("locked");
+        clearRecoveryTimer();
         const event = await repository.interrupt(id, owner, "recovery");
         record.interruptions.push(event);
         set({
@@ -203,7 +269,8 @@ export const useApp = create<State>((set, get) => ({
           feedback: false,
           pending: null,
         });
-      } else
+      } else {
+        clearRecoveryTimer();
         set({
           record,
           screen:
@@ -214,8 +281,11 @@ export const useApp = create<State>((set, get) => ({
           paused: false,
           pending: null,
         });
+      }
     } catch (e) {
-      set({ error: errorCode(e) });
+      const error = errorCode(e);
+      set({ error });
+      if (resume && error === "locked") scheduleRecoveryRetry(id);
     } finally {
       set({ busy: false });
     }
@@ -391,7 +461,7 @@ export const useApp = create<State>((set, get) => ({
   },
   nextStage: async () => {
     const s = get();
-    if (!s.record || s.busy) return;
+    if (!s.record || s.busy || s.paused) return;
     set({ busy: true, error: null });
     try {
       const session = await repository.nextStage(s.record.session.id, owner);
@@ -472,4 +542,23 @@ export function startLifecycle() {
     document.removeEventListener("visibilitychange", visibility);
     window.removeEventListener("pagehide", pagehide);
   };
+}
+
+function scheduleRecoveryRetry(id: string) {
+  clearRecoveryTimer();
+  recoverySessionId = id;
+  recoveryTimer = setTimeout(() => {
+    recoveryTimer = undefined;
+    const s = useApp.getState();
+    if (
+      recoverySessionId === id &&
+      s.initialized &&
+      s.screen === "home" &&
+      !s.record &&
+      s.error === "locked"
+    ) {
+      recoverySessionId = null;
+      void s.open(id, true);
+    } else recoverySessionId = null;
+  }, RECOVERY_RETRY_MS);
 }

@@ -10,7 +10,8 @@ import { PwaControls } from "./components/PwaControls";
 export default function App() {
   const s = useApp(),
     inTask = ["play", "break", "complete"].includes(s.screen),
-    playing = ["play", "break"].includes(s.screen);
+    playing = ["play", "break"].includes(s.screen),
+    saving = s.busy || !!s.pending;
   const language = inTask && s.record ? s.record.session.language : s.language,
     theme = inTask && s.record ? s.record.session.theme : s.theme,
     t = text(language);
@@ -26,19 +27,19 @@ export default function App() {
       ?.setAttribute("content", theme === "light" ? "#fafaf7" : "#191b20");
   }, [language, theme]);
   useEffect(() => {
-    if (!playing) return;
+    if (!playing || !saving) return;
     const warn = (e: BeforeUnloadEvent) => {
       e.preventDefault();
     };
     window.addEventListener("beforeunload", warn);
     return () => window.removeEventListener("beforeunload", warn);
-  }, [playing]);
+  }, [playing, saving]);
   return (
     <div id="gb" className={playing ? "app playing" : "app"}>
       <header>
         <button
           className="brand"
-          disabled={playing || s.busy}
+          disabled={!s.initialized || playing || s.busy}
           onClick={() => void s.navigate("home")}
           aria-label="gambal"
         >
@@ -51,7 +52,7 @@ export default function App() {
           gambal
         </button>
         <nav aria-label="gambal">
-          {!inTask && (
+          {!inTask && s.initialized && (
             <>
               <button onClick={() => void s.navigate("library")}>
                 {t.sessions}
@@ -75,7 +76,10 @@ export default function App() {
               </button>
             </>
           )}
-          <PwaControls t={t} blocked={inTask || s.busy || !!s.pending} />
+          <PwaControls
+            t={t}
+            blocked={!s.initialized || inTask || s.busy || !!s.pending}
+          />
         </nav>
       </header>
       {s.error && (
@@ -106,7 +110,11 @@ export default function App() {
         </div>
       )}
       <main id="main">
-        {s.screen === "home" ? (
+        {!s.initialized ? (
+          <p className="startup" role="status">
+            {t.loadingSession}
+          </p>
+        ) : s.screen === "home" ? (
           <Home />
         ) : s.screen === "instructions" ? (
           <Instructions />

@@ -104,6 +104,7 @@ const tr = {
   soundEffects: "Ses efektleri",
   enableSound: "Ses efektlerini aç",
   muteSound: "Ses efektlerini kapat",
+  loadingSession: "Oturumunuz açılıyor…",
   checksum: "Deste SHA-256",
   verification: "Doğrulama",
   legacyNote:
@@ -218,6 +219,7 @@ const en: Record<keyof typeof tr, string> = {
   soundEffects: "Sound effects",
   enableSound: "Turn sound effects on",
   muteSound: "Mute sound effects",
+  loadingSession: "Loading your session…",
   checksum: "Deck SHA-256",
   verification: "Verification",
   legacyNote:
