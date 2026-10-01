@@ -1,18 +1,55 @@
-import { useMemo } from "react";
+import { useEffect, useMemo } from "react";
 import { useApp } from "../state/store";
-import { text, number } from "../i18n";
-import { DECKS } from "../domain/types";
-import { report } from "../domain/report";
+import { text, number, percent } from "../i18n";
+import { analyzeSession } from "../domain/analysis";
+import { behavioralSummary } from "../domain/summary";
+import {
+  Learning,
+  ChoiceProfile,
+  ChoiceSequence,
+} from "../components/ReportFigures";
+import {
+  DeckProfile,
+  FeedbackAnalysis,
+  DataQuality,
+  AnalysisMethod,
+} from "../components/ReportAnalysis";
 import { download, encodeBackup, trialsCsv } from "../storage/backup";
-import { BlockChart, BalanceChart } from "../components/Charts";
+import { BalanceChart } from "../components/Charts";
 export function Report() {
   const s = useApp(),
     r = s.record!,
     session = r.session,
     t = text(s.language),
-    data = useMemo(() => report(session, r.trials), [session, r.trials]);
+    data = useMemo(() => analyzeSession(r), [r]);
+  useEffect(() => {
+    let disclosures: [HTMLDetailsElement, boolean][] = [];
+    const prepare = () => {
+      if (disclosures.length) return;
+      disclosures = Array.from(
+        document.querySelectorAll<HTMLDetailsElement>(".results details"),
+        (node) => [node, node.open],
+      );
+      disclosures.forEach(([node]) => {
+        node.open = true;
+      });
+    };
+    const restore = () => {
+      disclosures.forEach(([node, open]) => {
+        node.open = open;
+      });
+      disclosures = [];
+    };
+    window.addEventListener("beforeprint", prepare);
+    window.addEventListener("afterprint", restore);
+    return () => {
+      restore();
+      window.removeEventListener("beforeprint", prepare);
+      window.removeEventListener("afterprint", restore);
+    };
+  }, []);
   return (
-    <section className="results">
+    <section className="results" lang={s.language}>
       <div className="report-title">
         <div>
           <h1>{t.results}</h1>
@@ -34,6 +71,12 @@ export function Report() {
           <span>{t.score}</span>
         </div>
         <div>
+          <strong>
+            {percent(data.core.advantageousChoiceRate, s.language)}
+          </strong>
+          <span>{t.advantageousChoices}</span>
+        </div>
+        <div>
           <strong>${number(session.balance, s.language)}</strong>
           <span>{t.finalBalance}</span>
         </div>
@@ -42,47 +85,46 @@ export function Report() {
           <span>{t.choices}</span>
         </div>
       </div>
-      <div className="report-charts">
-        <section className="chart">
-          <h2>{t.deckChoices}</h2>
-          {DECKS.map((d) => (
-            <div className="bar-row" key={d}>
-              <span>{d}</span>
-              <div className="track">
-                <div
-                  className="bar"
-                  style={{
-                    width: `${r.trials.length ? (data.total.counts[d] / r.trials.length) * 100 : 0}%`,
-                  }}
-                />
-              </div>
-              <span>{data.total.counts[d]}</span>
-            </div>
-          ))}
-        </section>
-        <section className="chart">
-          <h2>{t.balanceChart}</h2>
-          <BalanceChart record={r} t={t} />
-        </section>
+      <div className="behavioral-summary">
+        <p>{behavioralSummary(data, s.language)}</p>
+        <p className="report-note">{t.summaryScope}</p>
       </div>
+      <Learning data={data} language={s.language} />
+      <ChoiceProfile data={data} language={s.language} />
+      <section className="report-section">
+        <h2>{t.balanceChart}</h2>
+        <BalanceChart record={r} t={t} analysis={data} language={s.language} />
+        <div className="totals">
+          <span>
+            {t.gain} <b>${number(data.total.gains, s.language)}</b>
+          </span>
+          <span>
+            {t.loss} <b>${number(data.total.losses, s.language)}</b>
+          </span>
+        </div>
+      </section>
+      <DeckProfile data={data} language={s.language} />
+      <FeedbackAnalysis data={data} language={s.language} />
+      <ChoiceSequence record={r} language={s.language} />
+      <DataQuality data={data} language={s.language} />
+      <AnalysisMethod data={data} language={s.language} />
       {data.stages.map((stage) => (
-        <section key={stage.stage} className="stage-report">
-          <h2>
-            {t.blockScore}
-            {data.stages.length > 1 ? ` · ${t.stage} ${stage.stage}` : ""}
-          </h2>
-          <BlockChart blocks={stage.blocks} t={t} />
+        <div key={stage.stage} className="report-detail">
           <details>
-            <summary>{t.details}</summary>
+            <summary>
+              {t.blockDetails}
+              {data.stages.length > 1 ? ` · ${t.stage} ${stage.stage}` : ""}
+            </summary>
             <div className="table-wrap">
               <table>
+                <caption className="sr">{t.blockDetails}</caption>
                 <thead>
                   <tr>
-                    <th>{t.segment}</th>
-                    <th>{t.choices}</th>
-                    <th>{t.score}</th>
-                    <th>{t.rescaled}</th>
-                    <th>{t.advantageous}</th>
+                    <th scope="col">{t.segment}</th>
+                    <th scope="col">{t.choices}</th>
+                    <th scope="col">{t.score}</th>
+                    <th scope="col">{t.rescaled}</th>
+                    <th scope="col">{t.advantageous}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -118,29 +160,22 @@ export function Report() {
               </table>
             </div>
           </details>
-        </section>
+        </div>
       ))}
-      <div className="totals">
-        <span>
-          {t.gain} <b>${number(data.total.gains, s.language)}</b>
-        </span>
-        <span>
-          {t.loss} <b>${number(data.total.losses, s.language)}</b>
-        </span>
-      </div>
       <details className="report-detail">
         <summary>{t.log}</summary>
         <div className="table-wrap">
           <table>
+            <caption className="sr">{t.log}</caption>
             <thead>
               <tr>
-                <th>{t.trial}</th>
-                <th>{t.stage}</th>
-                <th>{t.card}</th>
-                <th>{t.gain}</th>
-                <th>{t.loss}</th>
-                <th>{t.balance}</th>
-                <th>{t.response}</th>
+                <th scope="col">{t.trial}</th>
+                <th scope="col">{t.stage}</th>
+                <th scope="col">{t.card}</th>
+                <th scope="col">{t.gain}</th>
+                <th scope="col">{t.loss}</th>
+                <th scope="col">{t.balance}</th>
+                <th scope="col">{t.response}</th>
               </tr>
             </thead>
             <tbody>
@@ -223,6 +258,29 @@ export function Report() {
         </ul>
       </details>
       <div className="report-bottom">
+        <button
+          className="text-button"
+          onClick={() =>
+            download(
+              JSON.stringify(
+                {
+                  format: "gambal-analysis",
+                  version: data.version,
+                  analysis: data,
+                },
+                null,
+                2,
+              ),
+              `gambal-${session.id}-analysis.json`,
+              "application/json",
+            )
+          }
+        >
+          {t.downloadAnalysis}
+        </button>
+        <button className="text-button" onClick={() => window.print()}>
+          {t.printReport}
+        </button>
         <button
           className="text-button"
           onClick={() =>

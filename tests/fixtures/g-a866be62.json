@@ -1,0 +1,2529 @@
+{
+  "session": {
+    "id": "00000000-0000-4000-8000-000000000001",
+    "schemaVersion": 2,
+    "task": {
+      "id": "gambal-legacy-v1",
+      "revision": 1,
+      "title": {
+        "tr": "gambal · Eski sürüm",
+        "en": "gambal · Legacy"
+      },
+      "verification": "legacy-preserved",
+      "sources": ["gambal/src/new_iowa/src/decks/deck_{a,b,c,d}.csv"],
+      "decks": {
+        "A": [
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 80,
+            "loss": 150
+          },
+          {
+            "gain": 90,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 300
+          },
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 80,
+            "loss": 200
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 250
+          },
+          {
+            "gain": 90,
+            "loss": 350
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 350
+          },
+          {
+            "gain": 90,
+            "loss": 0
+          },
+          {
+            "gain": 100,
+            "loss": 250
+          },
+          {
+            "gain": 120,
+            "loss": 200
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 90,
+            "loss": 300
+          },
+          {
+            "gain": 130,
+            "loss": 150
+          },
+          {
+            "gain": 120,
+            "loss": 250
+          },
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 250
+          },
+          {
+            "gain": 140,
+            "loss": 300
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 350
+          },
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 200
+          },
+          {
+            "gain": 130,
+            "loss": 250
+          },
+          {
+            "gain": 110,
+            "loss": 150
+          },
+          {
+            "gain": 140,
+            "loss": 250
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 350
+          },
+          {
+            "gain": 120,
+            "loss": 200
+          },
+          {
+            "gain": 140,
+            "loss": 250
+          },
+          {
+            "gain": 130,
+            "loss": 250
+          },
+          {
+            "gain": 110,
+            "loss": 150
+          },
+          {
+            "gain": 150,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 150
+          },
+          {
+            "gain": 120,
+            "loss": 300
+          },
+          {
+            "gain": 150,
+            "loss": 350
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 350
+          },
+          {
+            "gain": 130,
+            "loss": 200
+          },
+          {
+            "gain": 150,
+            "loss": 250
+          },
+          {
+            "gain": 140,
+            "loss": 250
+          },
+          {
+            "gain": 120,
+            "loss": 150
+          },
+          {
+            "gain": 160,
+            "loss": 0
+          },
+          {
+            "gain": 150,
+            "loss": 150
+          },
+          {
+            "gain": 130,
+            "loss": 300
+          },
+          {
+            "gain": 160,
+            "loss": 350
+          },
+          {
+            "gain": 120,
+            "loss": 250
+          },
+          {
+            "gain": 150,
+            "loss": 350
+          },
+          {
+            "gain": 140,
+            "loss": 200
+          },
+          {
+            "gain": 160,
+            "loss": 250
+          },
+          {
+            "gain": 150,
+            "loss": 250
+          },
+          {
+            "gain": 130,
+            "loss": 150
+          },
+          {
+            "gain": 170,
+            "loss": 250
+          },
+          {
+            "gain": 160,
+            "loss": 150
+          },
+          {
+            "gain": 140,
+            "loss": 300
+          },
+          {
+            "gain": 170,
+            "loss": 350
+          },
+          {
+            "gain": 130,
+            "loss": 250
+          }
+        ],
+        "B": [
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 80,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 90,
+            "loss": 0
+          },
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 90,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 1250
+          },
+          {
+            "gain": 80,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 90,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 1500
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 90,
+            "loss": 0
+          },
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 1750
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 0
+          },
+          {
+            "gain": 100,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 2000
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 0
+          },
+          {
+            "gain": 150,
+            "loss": 0
+          },
+          {
+            "gain": 110,
+            "loss": 0
+          },
+          {
+            "gain": 150,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 0
+          },
+          {
+            "gain": 150,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 0
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 0
+          },
+          {
+            "gain": 160,
+            "loss": 2250
+          },
+          {
+            "gain": 120,
+            "loss": 0
+          },
+          {
+            "gain": 160,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 0
+          },
+          {
+            "gain": 150,
+            "loss": 0
+          },
+          {
+            "gain": 150,
+            "loss": 0
+          },
+          {
+            "gain": 160,
+            "loss": 0
+          },
+          {
+            "gain": 140,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 0
+          },
+          {
+            "gain": 150,
+            "loss": 0
+          },
+          {
+            "gain": 170,
+            "loss": 0
+          },
+          {
+            "gain": 130,
+            "loss": 0
+          },
+          {
+            "gain": 170,
+            "loss": 2500
+          },
+          {
+            "gain": 140,
+            "loss": 0
+          },
+          {
+            "gain": 160,
+            "loss": 0
+          }
+        ],
+        "C": [
+          {
+            "gain": 50,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 40,
+            "loss": 50
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 50
+          },
+          {
+            "gain": 45,
+            "loss": 0
+          },
+          {
+            "gain": 50,
+            "loss": 50
+          },
+          {
+            "gain": 45,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 50
+          },
+          {
+            "gain": 40,
+            "loss": 50
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 25
+          },
+          {
+            "gain": 65,
+            "loss": 75
+          },
+          {
+            "gain": 45,
+            "loss": 0
+          },
+          {
+            "gain": 70,
+            "loss": 25
+          },
+          {
+            "gain": 40,
+            "loss": 0
+          },
+          {
+            "gain": 50,
+            "loss": 25
+          },
+          {
+            "gain": 60,
+            "loss": 75
+          },
+          {
+            "gain": 70,
+            "loss": 0
+          },
+          {
+            "gain": 40,
+            "loss": 50
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 25
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 80,
+            "loss": 50
+          },
+          {
+            "gain": 40,
+            "loss": 25
+          },
+          {
+            "gain": 60,
+            "loss": 50
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 25
+          },
+          {
+            "gain": 40,
+            "loss": 75
+          },
+          {
+            "gain": 80,
+            "loss": 50
+          },
+          {
+            "gain": 65,
+            "loss": 25
+          },
+          {
+            "gain": 75,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 25
+          },
+          {
+            "gain": 60,
+            "loss": 25
+          },
+          {
+            "gain": 70,
+            "loss": 25
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 75
+          },
+          {
+            "gain": 75,
+            "loss": 25
+          },
+          {
+            "gain": 45,
+            "loss": 50
+          },
+          {
+            "gain": 85,
+            "loss": 75
+          },
+          {
+            "gain": 70,
+            "loss": 25
+          },
+          {
+            "gain": 80,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 25
+          },
+          {
+            "gain": 65,
+            "loss": 25
+          },
+          {
+            "gain": 75,
+            "loss": 25
+          },
+          {
+            "gain": 70,
+            "loss": 25
+          },
+          {
+            "gain": 60,
+            "loss": 75
+          },
+          {
+            "gain": 80,
+            "loss": 25
+          },
+          {
+            "gain": 50,
+            "loss": 50
+          },
+          {
+            "gain": 90,
+            "loss": 75
+          },
+          {
+            "gain": 75,
+            "loss": 25
+          },
+          {
+            "gain": 85,
+            "loss": 25
+          },
+          {
+            "gain": 65,
+            "loss": 25
+          },
+          {
+            "gain": 70,
+            "loss": 25
+          },
+          {
+            "gain": 80,
+            "loss": 25
+          },
+          {
+            "gain": 75,
+            "loss": 25
+          },
+          {
+            "gain": 65,
+            "loss": 75
+          },
+          {
+            "gain": 85,
+            "loss": 25
+          },
+          {
+            "gain": 55,
+            "loss": 50
+          },
+          {
+            "gain": 95,
+            "loss": 75
+          }
+        ],
+        "D": [
+          {
+            "gain": 50,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 40,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 45,
+            "loss": 0
+          },
+          {
+            "gain": 50,
+            "loss": 0
+          },
+          {
+            "gain": 45,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 40,
+            "loss": 250
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 45,
+            "loss": 0
+          },
+          {
+            "gain": 70,
+            "loss": 0
+          },
+          {
+            "gain": 40,
+            "loss": 0
+          },
+          {
+            "gain": 50,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 70,
+            "loss": 0
+          },
+          {
+            "gain": 40,
+            "loss": 275
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 80,
+            "loss": 0
+          },
+          {
+            "gain": 40,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 40,
+            "loss": 300
+          },
+          {
+            "gain": 80,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 75,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 70,
+            "loss": 325
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 75,
+            "loss": 0
+          },
+          {
+            "gain": 45,
+            "loss": 0
+          },
+          {
+            "gain": 85,
+            "loss": 0
+          },
+          {
+            "gain": 70,
+            "loss": 0
+          },
+          {
+            "gain": 80,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 75,
+            "loss": 350
+          },
+          {
+            "gain": 70,
+            "loss": 0
+          },
+          {
+            "gain": 60,
+            "loss": 0
+          },
+          {
+            "gain": 80,
+            "loss": 0
+          },
+          {
+            "gain": 50,
+            "loss": 0
+          },
+          {
+            "gain": 90,
+            "loss": 0
+          },
+          {
+            "gain": 75,
+            "loss": 0
+          },
+          {
+            "gain": 85,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 70,
+            "loss": 0
+          },
+          {
+            "gain": 80,
+            "loss": 0
+          },
+          {
+            "gain": 75,
+            "loss": 0
+          },
+          {
+            "gain": 65,
+            "loss": 0
+          },
+          {
+            "gain": 85,
+            "loss": 375
+          },
+          {
+            "gain": 55,
+            "loss": 0
+          },
+          {
+            "gain": 95,
+            "loss": 0
+          }
+        ]
+      },
+      "deckChecksum": "01604070c77f59b2113807b52bc07ac0b52f2a5d0bcb5c0e27f7c8f3d15c77ea",
+      "procedure": {
+        "startingBalance": 2000,
+        "trialsPerStage": 100,
+        "stages": 1,
+        "exhaustion": "disable",
+        "resetBetweenStages": true,
+        "breakMs": 0
+      },
+      "presentation": {
+        "id": "puzzle-v1",
+        "feedbackMs": 900
+      },
+      "instructions": {
+        "tr": "$2000 ile başlarsınız. Her seçimde dört desteden bir kart alın. Kartlar para kazandırır; bazı kartlar aynı zamanda para kaybettirir. Amacınız bakiyenizi artırmaktır. Bitiş ekranını görene kadar devam edin.",
+        "en": "You start with $2000. Select a card from one of the four decks each time. Cards give you money; some cards also take money away. Your aim is to increase your balance. Keep playing until the end screen appears."
+      }
+    },
+    "participant": {
+      "code": "G-A866BE62"
+    },
+    "mode": "self",
+    "language": "tr",
+    "theme": "light",
+    "status": "completed",
+    "createdAt": "2020-01-01T00:00:00.000Z",
+    "updatedAt": "2020-01-01T00:02:00.000Z",
+    "endedAt": "2020-01-01T00:02:00.000Z",
+    "stage": 1,
+    "trialCount": 100,
+    "stageTrialCount": 100,
+    "balance": 2755,
+    "positions": {
+      "A": 10,
+      "B": 14,
+      "C": 56,
+      "D": 20
+    },
+    "revision": 100,
+    "feedbackUntil": 0,
+    "stageAvailableAt": 0
+  },
+  "trials": [
+    {
+      "id": "00000000-0000-4000-8000-000000000002",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 829,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 1,
+      "stage": 1,
+      "stageSequence": 1,
+      "deckPosition": 1,
+      "gain": 100,
+      "loss": 0,
+      "balance": 2100
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000003",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 435,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 2,
+      "stage": 1,
+      "stageSequence": 2,
+      "deckPosition": 1,
+      "gain": 100,
+      "loss": 0,
+      "balance": 2200
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000004",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 257,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 3,
+      "stage": 1,
+      "stageSequence": 3,
+      "deckPosition": 2,
+      "gain": 80,
+      "loss": 0,
+      "balance": 2280
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000005",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 224,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 4,
+      "stage": 1,
+      "stageSequence": 4,
+      "deckPosition": 1,
+      "gain": 50,
+      "loss": 0,
+      "balance": 2330
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000006",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 271,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 5,
+      "stage": 1,
+      "stageSequence": 5,
+      "deckPosition": 1,
+      "gain": 50,
+      "loss": 0,
+      "balance": 2380
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000007",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 192,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 6,
+      "stage": 1,
+      "stageSequence": 6,
+      "deckPosition": 2,
+      "gain": 60,
+      "loss": 0,
+      "balance": 2440
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000008",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 170,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 7,
+      "stage": 1,
+      "stageSequence": 7,
+      "deckPosition": 3,
+      "gain": 110,
+      "loss": 0,
+      "balance": 2550
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000009",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 220,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 8,
+      "stage": 1,
+      "stageSequence": 8,
+      "deckPosition": 2,
+      "gain": 120,
+      "loss": 0,
+      "balance": 2670
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000010",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 160,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 9,
+      "stage": 1,
+      "stageSequence": 9,
+      "deckPosition": 3,
+      "gain": 40,
+      "loss": 50,
+      "balance": 2660
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000011",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 820,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 10,
+      "stage": 1,
+      "stageSequence": 10,
+      "deckPosition": 4,
+      "gain": 55,
+      "loss": 0,
+      "balance": 2715
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000012",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 187,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 11,
+      "stage": 1,
+      "stageSequence": 11,
+      "deckPosition": 5,
+      "gain": 55,
+      "loss": 50,
+      "balance": 2720
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000013",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 1304,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 12,
+      "stage": 1,
+      "stageSequence": 12,
+      "deckPosition": 2,
+      "gain": 60,
+      "loss": 0,
+      "balance": 2780
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000014",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 354,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 13,
+      "stage": 1,
+      "stageSequence": 13,
+      "deckPosition": 3,
+      "gain": 40,
+      "loss": 0,
+      "balance": 2820
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000015",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 39,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 14,
+      "stage": 1,
+      "stageSequence": 14,
+      "deckPosition": 4,
+      "gain": 120,
+      "loss": 0,
+      "balance": 2940
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000016",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 43,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 15,
+      "stage": 1,
+      "stageSequence": 15,
+      "deckPosition": 5,
+      "gain": 90,
+      "loss": 0,
+      "balance": 3030
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000017",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 137,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 16,
+      "stage": 1,
+      "stageSequence": 16,
+      "deckPosition": 4,
+      "gain": 55,
+      "loss": 0,
+      "balance": 3085
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000018",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 42,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 17,
+      "stage": 1,
+      "stageSequence": 17,
+      "deckPosition": 6,
+      "gain": 45,
+      "loss": 0,
+      "balance": 3130
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000019",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 320,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 18,
+      "stage": 1,
+      "stageSequence": 18,
+      "deckPosition": 3,
+      "gain": 80,
+      "loss": 150,
+      "balance": 3060
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000020",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 1355,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 19,
+      "stage": 1,
+      "stageSequence": 19,
+      "deckPosition": 6,
+      "gain": 100,
+      "loss": 0,
+      "balance": 3160
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000021",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 389,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 20,
+      "stage": 1,
+      "stageSequence": 20,
+      "deckPosition": 4,
+      "gain": 90,
+      "loss": 0,
+      "balance": 3250
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000022",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 105,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 21,
+      "stage": 1,
+      "stageSequence": 21,
+      "deckPosition": 7,
+      "gain": 50,
+      "loss": 50,
+      "balance": 3250
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000023",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 3102,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 22,
+      "stage": 1,
+      "stageSequence": 22,
+      "deckPosition": 5,
+      "gain": 55,
+      "loss": 0,
+      "balance": 3305
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000024",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 21,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 23,
+      "stage": 1,
+      "stageSequence": 23,
+      "deckPosition": 6,
+      "gain": 45,
+      "loss": 0,
+      "balance": 3350
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000025",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 289,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 24,
+      "stage": 1,
+      "stageSequence": 24,
+      "deckPosition": 8,
+      "gain": 45,
+      "loss": 0,
+      "balance": 3395
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000026",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 21,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 25,
+      "stage": 1,
+      "stageSequence": 25,
+      "deckPosition": 9,
+      "gain": 60,
+      "loss": 50,
+      "balance": 3405
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000027",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 339,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 26,
+      "stage": 1,
+      "stageSequence": 26,
+      "deckPosition": 7,
+      "gain": 50,
+      "loss": 0,
+      "balance": 3455
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000028",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 487,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 27,
+      "stage": 1,
+      "stageSequence": 27,
+      "deckPosition": 10,
+      "gain": 40,
+      "loss": 50,
+      "balance": 3445
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000029",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 305,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 28,
+      "stage": 1,
+      "stageSequence": 28,
+      "deckPosition": 5,
+      "gain": 110,
+      "loss": 300,
+      "balance": 3255
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000030",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 1561,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 29,
+      "stage": 1,
+      "stageSequence": 29,
+      "deckPosition": 6,
+      "gain": 100,
+      "loss": 0,
+      "balance": 3355
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000031",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 140,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 30,
+      "stage": 1,
+      "stageSequence": 30,
+      "deckPosition": 7,
+      "gain": 80,
+      "loss": 200,
+      "balance": 3235
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000032",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 1066,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 31,
+      "stage": 1,
+      "stageSequence": 31,
+      "deckPosition": 7,
+      "gain": 90,
+      "loss": 0,
+      "balance": 3325
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000033",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 406,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 32,
+      "stage": 1,
+      "stageSequence": 32,
+      "deckPosition": 8,
+      "gain": 120,
+      "loss": 0,
+      "balance": 3445
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000034",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 41,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 33,
+      "stage": 1,
+      "stageSequence": 33,
+      "deckPosition": 9,
+      "gain": 110,
+      "loss": 1250,
+      "balance": 2305
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000035",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 2004,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 34,
+      "stage": 1,
+      "stageSequence": 34,
+      "deckPosition": 11,
+      "gain": 55,
+      "loss": 0,
+      "balance": 2360
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000036",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 50,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 35,
+      "stage": 1,
+      "stageSequence": 35,
+      "deckPosition": 12,
+      "gain": 55,
+      "loss": 25,
+      "balance": 2390
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000037",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 137,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 36,
+      "stage": 1,
+      "stageSequence": 36,
+      "deckPosition": 13,
+      "gain": 65,
+      "loss": 75,
+      "balance": 2380
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000038",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 339,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 37,
+      "stage": 1,
+      "stageSequence": 37,
+      "deckPosition": 14,
+      "gain": 45,
+      "loss": 0,
+      "balance": 2425
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000039",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 104,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 38,
+      "stage": 1,
+      "stageSequence": 38,
+      "deckPosition": 8,
+      "gain": 45,
+      "loss": 0,
+      "balance": 2470
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000040",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 120,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 39,
+      "stage": 1,
+      "stageSequence": 39,
+      "deckPosition": 15,
+      "gain": 70,
+      "loss": 25,
+      "balance": 2515
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000041",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 104,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 40,
+      "stage": 1,
+      "stageSequence": 40,
+      "deckPosition": 9,
+      "gain": 60,
+      "loss": 0,
+      "balance": 2575
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000042",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 45,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 41,
+      "stage": 1,
+      "stageSequence": 41,
+      "deckPosition": 16,
+      "gain": 40,
+      "loss": 0,
+      "balance": 2615
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000043",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 42,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 42,
+      "stage": 1,
+      "stageSequence": 42,
+      "deckPosition": 10,
+      "gain": 40,
+      "loss": 250,
+      "balance": 2405
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000044",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 1404,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 43,
+      "stage": 1,
+      "stageSequence": 43,
+      "deckPosition": 17,
+      "gain": 50,
+      "loss": 25,
+      "balance": 2430
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000045",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 243,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 44,
+      "stage": 1,
+      "stageSequence": 44,
+      "deckPosition": 18,
+      "gain": 60,
+      "loss": 75,
+      "balance": 2415
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000046",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 50,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 45,
+      "stage": 1,
+      "stageSequence": 45,
+      "deckPosition": 19,
+      "gain": 70,
+      "loss": 0,
+      "balance": 2485
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000047",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 371,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 46,
+      "stage": 1,
+      "stageSequence": 46,
+      "deckPosition": 20,
+      "gain": 40,
+      "loss": 50,
+      "balance": 2475
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000048",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 324,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 47,
+      "stage": 1,
+      "stageSequence": 47,
+      "deckPosition": 10,
+      "gain": 80,
+      "loss": 0,
+      "balance": 2555
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000049",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 46,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 48,
+      "stage": 1,
+      "stageSequence": 48,
+      "deckPosition": 8,
+      "gain": 120,
+      "loss": 0,
+      "balance": 2675
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000050",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 305,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 49,
+      "stage": 1,
+      "stageSequence": 49,
+      "deckPosition": 9,
+      "gain": 110,
+      "loss": 250,
+      "balance": 2535
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000051",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 672,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 50,
+      "stage": 1,
+      "stageSequence": 50,
+      "deckPosition": 11,
+      "gain": 110,
+      "loss": 0,
+      "balance": 2645
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000052",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 357,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 51,
+      "stage": 1,
+      "stageSequence": 51,
+      "deckPosition": 12,
+      "gain": 100,
+      "loss": 0,
+      "balance": 2745
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000053",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 224,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 52,
+      "stage": 1,
+      "stageSequence": 52,
+      "deckPosition": 13,
+      "gain": 90,
+      "loss": 0,
+      "balance": 2835
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000054",
+      "deck": "A",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 86,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 53,
+      "stage": 1,
+      "stageSequence": 53,
+      "deckPosition": 10,
+      "gain": 90,
+      "loss": 350,
+      "balance": 2575
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000055",
+      "deck": "B",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 621,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 54,
+      "stage": 1,
+      "stageSequence": 54,
+      "deckPosition": 14,
+      "gain": 130,
+      "loss": 1500,
+      "balance": 1205
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000056",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 891,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 55,
+      "stage": 1,
+      "stageSequence": 55,
+      "deckPosition": 21,
+      "gain": 60,
+      "loss": 0,
+      "balance": 1265
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000057",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 174,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 56,
+      "stage": 1,
+      "stageSequence": 56,
+      "deckPosition": 22,
+      "gain": 65,
+      "loss": 25,
+      "balance": 1305
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000058",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 4,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 57,
+      "stage": 1,
+      "stageSequence": 57,
+      "deckPosition": 11,
+      "gain": 55,
+      "loss": 0,
+      "balance": 1360
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000059",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 141,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 58,
+      "stage": 1,
+      "stageSequence": 58,
+      "deckPosition": 12,
+      "gain": 55,
+      "loss": 0,
+      "balance": 1415
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000060",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 102,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 59,
+      "stage": 1,
+      "stageSequence": 59,
+      "deckPosition": 23,
+      "gain": 55,
+      "loss": 0,
+      "balance": 1470
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000061",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 52,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 60,
+      "stage": 1,
+      "stageSequence": 60,
+      "deckPosition": 13,
+      "gain": 65,
+      "loss": 0,
+      "balance": 1535
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000062",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 103,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 61,
+      "stage": 1,
+      "stageSequence": 61,
+      "deckPosition": 24,
+      "gain": 80,
+      "loss": 50,
+      "balance": 1565
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000063",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 120,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 62,
+      "stage": 1,
+      "stageSequence": 62,
+      "deckPosition": 14,
+      "gain": 45,
+      "loss": 0,
+      "balance": 1610
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000064",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 177,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 63,
+      "stage": 1,
+      "stageSequence": 63,
+      "deckPosition": 15,
+      "gain": 70,
+      "loss": 0,
+      "balance": 1680
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000065",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 86,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 64,
+      "stage": 1,
+      "stageSequence": 64,
+      "deckPosition": 25,
+      "gain": 40,
+      "loss": 25,
+      "balance": 1695
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000066",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 104,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 65,
+      "stage": 1,
+      "stageSequence": 65,
+      "deckPosition": 26,
+      "gain": 60,
+      "loss": 50,
+      "balance": 1705
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000067",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 170,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 66,
+      "stage": 1,
+      "stageSequence": 66,
+      "deckPosition": 27,
+      "gain": 55,
+      "loss": 0,
+      "balance": 1760
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000068",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 137,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 67,
+      "stage": 1,
+      "stageSequence": 67,
+      "deckPosition": 28,
+      "gain": 65,
+      "loss": 25,
+      "balance": 1800
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000069",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 87,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 68,
+      "stage": 1,
+      "stageSequence": 68,
+      "deckPosition": 29,
+      "gain": 40,
+      "loss": 75,
+      "balance": 1765
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000070",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 171,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 69,
+      "stage": 1,
+      "stageSequence": 69,
+      "deckPosition": 30,
+      "gain": 80,
+      "loss": 50,
+      "balance": 1795
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000071",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 121,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 70,
+      "stage": 1,
+      "stageSequence": 70,
+      "deckPosition": 31,
+      "gain": 65,
+      "loss": 25,
+      "balance": 1835
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000072",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 4,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 71,
+      "stage": 1,
+      "stageSequence": 71,
+      "deckPosition": 32,
+      "gain": 75,
+      "loss": 0,
+      "balance": 1910
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000073",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 51,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 72,
+      "stage": 1,
+      "stageSequence": 72,
+      "deckPosition": 33,
+      "gain": 55,
+      "loss": 25,
+      "balance": 1940
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000074",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 52,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 73,
+      "stage": 1,
+      "stageSequence": 73,
+      "deckPosition": 34,
+      "gain": 60,
+      "loss": 25,
+      "balance": 1975
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000075",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 20,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 74,
+      "stage": 1,
+      "stageSequence": 74,
+      "deckPosition": 35,
+      "gain": 70,
+      "loss": 25,
+      "balance": 2020
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000076",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 21,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 75,
+      "stage": 1,
+      "stageSequence": 75,
+      "deckPosition": 36,
+      "gain": 65,
+      "loss": 0,
+      "balance": 2085
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000077",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 53,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 76,
+      "stage": 1,
+      "stageSequence": 76,
+      "deckPosition": 16,
+      "gain": 40,
+      "loss": 0,
+      "balance": 2125
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000078",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 45,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 77,
+      "stage": 1,
+      "stageSequence": 77,
+      "deckPosition": 37,
+      "gain": 55,
+      "loss": 75,
+      "balance": 2105
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000079",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 52,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 78,
+      "stage": 1,
+      "stageSequence": 78,
+      "deckPosition": 38,
+      "gain": 75,
+      "loss": 25,
+      "balance": 2155
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000080",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 70,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 79,
+      "stage": 1,
+      "stageSequence": 79,
+      "deckPosition": 17,
+      "gain": 50,
+      "loss": 0,
+      "balance": 2205
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000081",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 103,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 80,
+      "stage": 1,
+      "stageSequence": 80,
+      "deckPosition": 18,
+      "gain": 60,
+      "loss": 0,
+      "balance": 2265
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000082",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 137,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 81,
+      "stage": 1,
+      "stageSequence": 81,
+      "deckPosition": 39,
+      "gain": 45,
+      "loss": 50,
+      "balance": 2260
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000083",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 70,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 82,
+      "stage": 1,
+      "stageSequence": 82,
+      "deckPosition": 19,
+      "gain": 70,
+      "loss": 0,
+      "balance": 2330
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000084",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 104,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 83,
+      "stage": 1,
+      "stageSequence": 83,
+      "deckPosition": 40,
+      "gain": 85,
+      "loss": 75,
+      "balance": 2340
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000085",
+      "deck": "D",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 121,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 84,
+      "stage": 1,
+      "stageSequence": 84,
+      "deckPosition": 20,
+      "gain": 40,
+      "loss": 275,
+      "balance": 2105
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000086",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 454,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 85,
+      "stage": 1,
+      "stageSequence": 85,
+      "deckPosition": 41,
+      "gain": 70,
+      "loss": 25,
+      "balance": 2150
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000087",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 57,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 86,
+      "stage": 1,
+      "stageSequence": 86,
+      "deckPosition": 42,
+      "gain": 80,
+      "loss": 0,
+      "balance": 2230
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000088",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 205,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 87,
+      "stage": 1,
+      "stageSequence": 87,
+      "deckPosition": 43,
+      "gain": 60,
+      "loss": 25,
+      "balance": 2265
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000089",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 6,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 88,
+      "stage": 1,
+      "stageSequence": 88,
+      "deckPosition": 44,
+      "gain": 65,
+      "loss": 25,
+      "balance": 2305
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000090",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 188,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 89,
+      "stage": 1,
+      "stageSequence": 89,
+      "deckPosition": 45,
+      "gain": 75,
+      "loss": 25,
+      "balance": 2355
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000091",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 44,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 90,
+      "stage": 1,
+      "stageSequence": 90,
+      "deckPosition": 46,
+      "gain": 70,
+      "loss": 25,
+      "balance": 2400
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000092",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 237,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 91,
+      "stage": 1,
+      "stageSequence": 91,
+      "deckPosition": 47,
+      "gain": 60,
+      "loss": 75,
+      "balance": 2385
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000093",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 46,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 92,
+      "stage": 1,
+      "stageSequence": 92,
+      "deckPosition": 48,
+      "gain": 80,
+      "loss": 25,
+      "balance": 2440
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000094",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 53,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 93,
+      "stage": 1,
+      "stageSequence": 93,
+      "deckPosition": 49,
+      "gain": 50,
+      "loss": 50,
+      "balance": 2440
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000095",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 87,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 94,
+      "stage": 1,
+      "stageSequence": 94,
+      "deckPosition": 50,
+      "gain": 90,
+      "loss": 75,
+      "balance": 2455
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000096",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 152,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 95,
+      "stage": 1,
+      "stageSequence": 95,
+      "deckPosition": 51,
+      "gain": 75,
+      "loss": 25,
+      "balance": 2505
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000097",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 69,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 96,
+      "stage": 1,
+      "stageSequence": 96,
+      "deckPosition": 52,
+      "gain": 85,
+      "loss": 25,
+      "balance": 2565
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000098",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 42,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 97,
+      "stage": 1,
+      "stageSequence": 97,
+      "deckPosition": 53,
+      "gain": 65,
+      "loss": 25,
+      "balance": 2605
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000099",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 20,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 98,
+      "stage": 1,
+      "stageSequence": 98,
+      "deckPosition": 54,
+      "gain": 70,
+      "loss": 25,
+      "balance": 2650
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000100",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 42,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 99,
+      "stage": 1,
+      "stageSequence": 99,
+      "deckPosition": 55,
+      "gain": 80,
+      "loss": 25,
+      "balance": 2705
+    },
+    {
+      "id": "00000000-0000-4000-8000-000000000101",
+      "deck": "C",
+      "selectedAt": "2020-01-01T00:00:00.000Z",
+      "responseTimeMs": 87,
+      "afterInterruption": false,
+      "sessionId": "00000000-0000-4000-8000-000000000001",
+      "sequence": 100,
+      "stage": 1,
+      "stageSequence": 100,
+      "deckPosition": 56,
+      "gain": 75,
+      "loss": 25,
+      "balance": 2755
+    }
+  ],
+  "interruptions": []
+}

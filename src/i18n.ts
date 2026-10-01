@@ -1,5 +1,7 @@
 import type { Language } from "./domain/types";
+import { trReport, enReport } from "./reportCopy";
 const tr = {
+  ...trReport,
   balance: "Bakiye",
   gain: "Kazanç",
   loss: "Kayıp",
@@ -115,6 +117,7 @@ const tr = {
   downloadJson: "Oturum · JSON",
 };
 const en: Record<keyof typeof tr, string> = {
+  ...enReport,
   balance: "Balance",
   gain: "Gain",
   loss: "Loss",
@@ -222,8 +225,7 @@ const en: Record<keyof typeof tr, string> = {
   loadingSession: "Loading your session…",
   checksum: "Deck SHA-256",
   verification: "Verification",
-  legacyNote:
-    "Only Deck D cards 10, 20, 29, 35, 45, and 58 have losses.",
+  legacyNote: "Only Deck D cards 10, 20, 29, 35, 45, and 58 have losses.",
   legacy: "Legacy data",
   verified: "Verified",
   downloadCsv: "Choices · CSV",
@@ -248,3 +250,15 @@ export const number = (n: number, lang: Language) =>
   new Intl.NumberFormat(lang === "tr" ? "tr-TR" : "en-US", {
     maximumFractionDigits: 1,
   }).format(n);
+export const percent = (rate: number | null, lang: Language) =>
+  rate === null
+    ? "—"
+    : new Intl.NumberFormat(lang === "tr" ? "tr-TR" : "en-US", {
+        style: "percent",
+        maximumFractionDigits: 1,
+      }).format(rate);
+export const interpolate = (
+  template: string,
+  values: Record<string, string | number>,
+) =>
+  template.replace(/\{(\w+)\}/g, (_, key: string) => String(values[key] ?? ""));

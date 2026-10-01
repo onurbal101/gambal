@@ -1,12 +1,14 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useApp, startLifecycle } from "./state/store";
 import { text, errorText } from "./i18n";
 import { Home, Instructions } from "./screens/Home";
 import { Play, Completion, StageBreak } from "./screens/Play";
-import { Report } from "./screens/Report";
 import { Library } from "./screens/Library";
 import { PwaControls } from "./components/PwaControls";
+const Report = lazy(() =>
+  import("./screens/Report").then((module) => ({ default: module.Report })),
+);
 export default function App() {
   const s = useApp(),
     inTask = ["play", "break", "complete"].includes(s.screen),
@@ -128,7 +130,9 @@ export default function App() {
           ) : s.screen === "break" ? (
             <StageBreak />
           ) : (
-            <Report />
+            <Suspense fallback={<p role="status">{t.loadingSession}</p>}>
+              <Report />
+            </Suspense>
           )
         ) : null}
       </main>

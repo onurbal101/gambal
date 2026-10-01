@@ -1407,3 +1407,507 @@ button:disabled {
   fill: var(--ink);
   font-weight: 700;
 }
+
+/* Research report: native figures and ruled sections, within the existing paper. */
+#gb .results .metrics {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+#gb .results .metrics strong {
+  font-size: clamp(27px, 3.5vw, 38px);
+  letter-spacing: -1.3px;
+}
+#gb .behavioral-summary {
+  padding: 24px 0 30px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+#gb .report-note {
+  color: var(--muted-ink);
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+#gb .report-section {
+  border-top: 1px solid var(--line);
+  padding: 28px 0 32px;
+}
+#gb .report-section h2 {
+  font-size: 20px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#gb .report-section h3 {
+  font-size: 13px;
+  font-weight: 650;
+  margin: 0 0 14px;
+}
+#gb .report-section h3 small {
+  font-weight: 400;
+  color: var(--muted-ink);
+  margin-left: 8px;
+}
+#gb .half-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+#gb .half-rate {
+  font-size: 33px;
+  letter-spacing: -1px;
+  font-variant-numeric: tabular-nums;
+}
+#gb .half-comparison .composition-row {
+  margin-top: 15px;
+}
+#gb .learning-change {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid var(--line);
+  padding: 20px 0;
+  margin-bottom: 24px;
+  font-size: 13px;
+}
+#gb .learning-change b {
+  font-variant-numeric: tabular-nums;
+}
+#gb .learning-stage {
+  margin-top: 28px;
+}
+#gb .results .block-chart {
+  height: 192px;
+  margin-bottom: 30px;
+}
+#gb .results .block-space {
+  height: 164px;
+}
+#gb .results .block-value {
+  top: -22px;
+}
+#gb .block-composition-row {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr) 50px;
+  gap: 12px;
+  align-items: start;
+  margin: 17px 0;
+}
+#gb .block-composition-row > span {
+  font-size: 12px;
+  padding-top: 7px;
+  color: var(--muted-ink);
+}
+#gb .block-composition-row > strong {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 4px;
+  font-variant-numeric: tabular-nums;
+}
+#gb .block-composition-row > strong small {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--muted-ink);
+}
+#gb .composition-track {
+  display: flex;
+  width: 100%;
+  height: 30px;
+  background: var(--soft);
+  overflow: hidden;
+}
+#gb .composition-track > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 650;
+}
+#gb .deck-A {
+  background: var(--ink);
+  color: var(--paper);
+}
+#gb .deck-B {
+  background: var(--soft);
+  color: var(--ink);
+  border: 1px solid var(--muted-ink);
+}
+#gb .deck-C {
+  background: var(--lime);
+  color: #18220e;
+}
+#gb .deck-D {
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px dashed var(--ink);
+}
+#gb .composition-counts {
+  display: flex;
+  gap: 13px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: var(--muted-ink);
+}
+#gb .composition-counts b {
+  color: var(--ink);
+  font-weight: 500;
+}
+#gb .composition-empty {
+  width: 100%;
+  color: var(--muted-ink);
+}
+#gb .onset-note {
+  margin-top: 24px;
+  padding-left: 14px;
+  border-left: 3px solid var(--lime);
+  font-size: 13px;
+  line-height: 1.8;
+}
+#gb .preference-scale {
+  margin: 0 0 28px;
+}
+#gb .preference-scale figcaption {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+#gb .preference-scale figcaption small {
+  color: var(--muted-ink);
+}
+#gb .preference-ends {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+#gb .preference-line {
+  height: 2px;
+  background: var(--muted-ink);
+  margin: 18px 8px 12px;
+  position: relative;
+}
+#gb .preference-line::before,
+#gb .preference-line::after,
+#gb .preference-midpoint {
+  position: absolute;
+  content: "";
+  top: -4px;
+  height: 10px;
+  width: 1px;
+  background: var(--muted-ink);
+}
+#gb .preference-line::before {
+  left: 0;
+}
+#gb .preference-line::after {
+  right: 0;
+}
+#gb .preference-midpoint {
+  left: 50%;
+}
+#gb .preference-position {
+  position: absolute;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+  background: var(--ink);
+  border: 2px solid var(--paper);
+  outline: 1px solid var(--ink);
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+#gb .overall-frequency {
+  border-top: 1px solid var(--line);
+  padding: 17px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+}
+#gb .overall-frequency b {
+  font-variant-numeric: tabular-nums;
+}
+#gb .overall-frequency b span {
+  color: var(--muted-ink);
+  padding: 0 5px;
+}
+#gb .results .balance-chart {
+  height: auto;
+  display: block;
+}
+#gb .results .balance-chart text {
+  font-size: 16px;
+}
+#gb .loss-marker {
+  fill: var(--paper);
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+#gb .chart-slider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  margin: 14px 0;
+}
+#gb .chart-slider input {
+  flex: 1;
+  min-width: 0;
+  accent-color: var(--ink);
+  min-height: 32px;
+}
+#gb .chart-reading {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  margin: 0;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+#gb .chart-reading dd {
+  margin-top: 4px;
+  font-weight: 600;
+}
+#gb .results .totals {
+  padding: 25px 0 0;
+}
+#gb .deck-profile-table td small {
+  display: block;
+  color: var(--muted-ink);
+  font-size: 10px;
+}
+#gb .report-subdetail {
+  margin-top: 15px;
+}
+#gb .analysis-list {
+  margin: 15px 0;
+  font-size: 13px;
+}
+#gb .analysis-list > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+#gb .analysis-list dd {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+#gb .analysis-list dd small {
+  color: var(--muted-ink);
+}
+#gb .salient-events {
+  list-style: none;
+  margin: 24px 0 12px;
+  padding: 0;
+}
+#gb .salient-events li {
+  font-size: 13px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  line-height: 1.8;
+}
+#gb .salient-events .report-note {
+  margin-top: 3px;
+}
+#gb .event-choices {
+  white-space: nowrap;
+}
+#gb .choice-raster {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 5px;
+}
+#gb .raster-cell {
+  position: relative;
+  text-align: center;
+  min-width: 0;
+  min-height: 45px;
+  padding: 3px 0 8px;
+}
+#gb .raster-cell small {
+  display: block;
+  font-size: 8px;
+  opacity: 0.8;
+}
+#gb .raster-cell b {
+  font-size: 14px;
+  font-weight: 650;
+}
+#gb .raster-cell.has-punishment::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  height: 2px;
+  width: 12px;
+  left: calc(50% - 6px);
+  background: currentColor;
+}
+#gb .quality-warnings {
+  font-size: 13px;
+  line-height: 1.8;
+  padding-left: 18px;
+}
+#gb .results summary:focus-visible,
+#gb .results .table-wrap:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 4px;
+}
+#gb .results .report-detail {
+  padding: 5px 0;
+}
+#gb .results .report-bottom {
+  margin-top: 20px;
+  justify-content: flex-start;
+  gap: 8px 24px;
+}
+#gb .results .report-bottom button {
+  min-height: 44px;
+}
+
+@media (max-width: 600px) {
+  #gb .results .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px 28px;
+  }
+  #gb .report-section {
+    padding-top: 24px;
+    padding-bottom: 26px;
+  }
+  #gb .behavioral-summary {
+    font-size: 14px;
+  }
+  #gb .half-comparison {
+    gap: 20px;
+  }
+  #gb .half-rate {
+    font-size: 29px;
+  }
+  #gb .half-comparison .composition-counts {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  #gb .overall-frequency {
+    flex-direction: column;
+  }
+  #gb .learning-change {
+    flex-direction: column;
+    gap: 5px;
+  }
+  #gb .block-composition-row {
+    grid-template-columns: 48px minmax(0, 1fr) 44px;
+    gap: 8px;
+  }
+  #gb .composition-counts {
+    gap: 10px;
+  }
+  #gb .composition-track > span {
+    font-size: 10px;
+  }
+  #gb .chart-reading {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #gb .choice-raster {
+    gap: 3px;
+  }
+  #gb .raster-cell {
+    min-height: 40px;
+  }
+  #gb .event-choices {
+    display: block;
+  }
+  #gb .results .deck-profile-table {
+    font-size: 11px;
+  }
+  #gb .results .deck-profile-table th,
+  #gb .results .deck-profile-table td {
+    padding: 10px 3px;
+  }
+  #gb .analysis-list {
+    font-size: 12px;
+  }
+}
+@media print {
+  :root {
+    color-scheme: light !important;
+    background: white !important;
+  }
+  #gb {
+    --paper: white;
+    --ink: #191b20;
+    --muted-ink: #555;
+    --line: #ccc;
+    --soft: #eee;
+    background: white;
+    min-height: 0;
+  }
+  #gb > header,
+  #gb .report-title > button,
+  #gb .report-bottom,
+  #gb .chart-slider,
+  #gb .balance-figure > .report-note {
+    display: none !important;
+  }
+  #gb main {
+    padding: 0;
+    min-height: 0;
+  }
+  #gb .results {
+    max-width: none;
+  }
+  #gb .report-section {
+    padding: 18px 0;
+  }
+  #gb .report-section h2,
+  #gb .report-section h3,
+  #gb summary {
+    break-after: avoid;
+  }
+  #gb .half-comparison,
+  #gb .block-chart,
+  #gb .block-composition-row,
+  #gb .preference-scale,
+  #gb .balance-figure,
+  #gb .choice-raster,
+  #gb .analysis-list > div,
+  #gb tr {
+    break-inside: avoid;
+  }
+  #gb .table-wrap {
+    overflow: visible;
+  }
+  #gb .results table {
+    font-size: 9px;
+  }
+  #gb .results .deck-profile-table {
+    font-size: 11px;
+  }
+  #gb .results th,
+  #gb .results td {
+    padding: 6px 3px;
+  }
+  #gb .choice-raster,
+  #gb .composition-track,
+  #gb .block-bar {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  #gb .chart-reading {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  html,
+  body {
+    background: white;
+  }
+  #gb .block-composition {
+    break-inside: avoid;
+  }
+  #gb .balance-chart .final-balance-label {
+    fill: var(--ink);
+    font-weight: 600;
+  }
+}

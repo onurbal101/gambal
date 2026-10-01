@@ -90,6 +90,8 @@ export interface ScoreSegment {
   range: [number, number];
   rescaledScore: number | null;
   advantageousPercent: number | null;
+  advantageousChoiceRate: number | null;
+  disadvantageousChoiceRate: number | null;
   gains: number;
   losses: number;
 }

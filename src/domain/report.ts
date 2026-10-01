@@ -18,6 +18,8 @@ export function segment(
     range: [-count, count],
     rescaledScore: count ? (100 * score) / count : null,
     advantageousPercent: count ? (100 * (counts.C + counts.D)) / count : null,
+    advantageousChoiceRate: count ? (counts.C + counts.D) / count : null,
+    disadvantageousChoiceRate: count ? (counts.A + counts.B) / count : null,
     gains: trials.reduce((n, t) => n + t.gain, 0),
     losses: trials.reduce((n, t) => n + t.loss, 0),
   };
