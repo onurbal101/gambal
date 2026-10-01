@@ -109,8 +109,9 @@
 #gb .balance {
   font-size: 76px;
   line-height: 1.1;
-  font-weight: 800;
-  letter-spacing: -5px;
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  letter-spacing: 0;
   font-variant-numeric: tabular-nums;
   margin: 5px 0 17px;
 }
@@ -118,7 +119,7 @@
   font-size: 34px;
   vertical-align: top;
   line-height: 1.7;
-  letter-spacing: -2px;
+  letter-spacing: 0;
   margin-right: 5px;
 }
 #gb .balance-visual {
@@ -128,10 +129,16 @@
 }
 #gb .balance-reel {
   display: inline-block;
+  width: 1ch;
   height: 1.1em;
   overflow: hidden;
   vertical-align: top;
   letter-spacing: 0;
+}
+#gb .balance-separator {
+  display: inline-block;
+  width: 1ch;
+  text-align: center;
 }
 #gb .balance-reel-track {
   display: flex;
@@ -143,7 +150,7 @@
   flex: 0 0 1.1em;
   align-items: center;
   justify-content: center;
-  min-width: 0.58em;
+  width: 1ch;
   height: 1.1em;
 }
 #gb .balance-reel-track--up.is-rolling {
@@ -576,7 +583,6 @@
   }
   #gb .balance {
     font-size: 65px;
-    letter-spacing: -4px;
   }
   #gb .decks {
     gap: 10px;
@@ -1354,9 +1360,8 @@ button:disabled {
     position: absolute;
     left: 0;
     top: 58px;
-    width: 160px;
+    width: fit-content;
     font-size: 42px;
-    letter-spacing: -2px;
   }
   #gb.playing .balance-currency {
     font-size: 23px;

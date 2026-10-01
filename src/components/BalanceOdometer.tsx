@@ -76,7 +76,18 @@ export function BalanceOdometer({
   let digitRank = 0;
   const parts = formattedCharacters.map((character, index) => {
     if (!isDigit(character)) {
-      return <span key={`${activeRoll?.id ?? 0}-${index}`}>{character}</span>;
+      return (
+        <span
+          className={
+            character === "." || character === ","
+              ? "balance-separator"
+              : undefined
+          }
+          key={`${activeRoll?.id ?? 0}-${index}`}
+        >
+          {character}
+        </span>
+      );
     }
 
     const indexFromLeft = digitRank++;
